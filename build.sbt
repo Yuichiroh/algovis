@@ -26,6 +26,7 @@ scalacOptions += "-feature"
 
 scalacOptions += "-deprecation"
 
+unmanagedClasspath in Runtime += baseDirectory.value / "resources"
 
 unmanagedJars in Compile ++= Seq(
   Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar")),
