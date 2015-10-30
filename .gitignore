@@ -7,7 +7,6 @@
 bin
 out
 api
-lib
 /tmp
 tmp
 tmp.*
