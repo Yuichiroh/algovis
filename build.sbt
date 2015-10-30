@@ -33,10 +33,7 @@ unmanagedJars in Compile ++= Seq(
   Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/soundbank-deluxe.gm"))
 )
 
-lazy val algovis = (project in file("."))
-//  .dependsOn(util)
-//
-//lazy val util = RootProject(file("../util"))
+lazy val algovis = project in file(".")
 
 fork in run := true
 
