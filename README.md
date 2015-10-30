@@ -15,7 +15,7 @@ Visualization and audibilization of fundermental algorithms, currently including
     - Selection sort
     - Shell sort
 
-* Searching 
+* Searching
     - Depth first search
     - Breadth first search
     - IDDFS
@@ -24,7 +24,7 @@ Visualization and audibilization of fundermental algorithms, currently including
     - Kruskal's algorithm
 
 ## How to run
-Install sbt and scala 2.11, then type the following command.
+Install sbt and scala 2.11, then type the following command in the algovis directory.
 
 ```
 sbt run
