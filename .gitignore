@@ -13,9 +13,6 @@ tmp.*
 *.class
 *.log
 
-# for the current directory
-resources/
-
 # sbt specific
 .cache/
 .history/
