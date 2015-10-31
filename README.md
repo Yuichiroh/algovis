@@ -24,7 +24,7 @@ Visualization and audibilization of fundermental algorithms, currently including
     - Kruskal's algorithm
 
 ## How to run
-Install sbt and type the following command in the algovis directory.
+Install [sbt](http://www.scala-sbt.org/) and type the following command in the algovis directory.
 
 ```
 sbt run
