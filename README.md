@@ -1,5 +1,5 @@
 # algovis
-Visualization and audibilization of fundermental algorithms, currently including ones related to sorting and maze creating/searching problems.
+Visualization and audibilization of fundermental algorithms, currently including ones related to sorting and maze generating/searching problems.
 
 ## algorithms
 
