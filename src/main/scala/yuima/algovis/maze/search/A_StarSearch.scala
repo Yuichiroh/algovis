@@ -28,7 +28,7 @@ object A_StarSearch extends SearchAlgorithm {
 
       if (candidates.nonEmpty) {
         val (_, door) = candidates.dequeue()
-        nextPassageIsGoal(door, prev, candidates.toList.map(_._2), maze.goal, moved, maze.vis) match {
+        maybeNextPassage(door, prev, candidates.toList.map(_._2), maze.goal, moved, maze.vis) match {
           case Some(psg) =>
             moved += 1
             search(psg)

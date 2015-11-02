@@ -23,7 +23,7 @@ object DepthFirstSearch extends SearchAlgorithm {
       prev = passage
       Random.shuffle(nextCandidates(passage)).toList ::: candidates match {
         case door :: doors =>
-          nextPassageIsGoal(door, prev, candidates, maze.goal, moved, maze.vis) match {
+          maybeNextPassage(door, prev, candidates, maze.goal, moved, maze.vis) match {
             case Some(psg) =>
               moved += 1
               search(psg, doors)

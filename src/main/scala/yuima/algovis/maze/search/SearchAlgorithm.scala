@@ -18,7 +18,7 @@ trait SearchAlgorithm {
     .map { case (x, y, dir) => m.Door(x, y, passage.distanceTravelled + 1, dir) }
   }
 
-  def nextPassageIsGoal(door: Maze#Door, prev: Maze#Passage, leaves: Seq[Maze#Position], goal: Maze#Position,
+  def maybeNextPassage(door: Maze#Door, prev: Maze#Passage, leaves: Seq[Maze#Position], goal: Maze#Position,
                         moved: Int, vis: Option[Visualizer])
                        (implicit maze: MazeOnSearch)
   : Option[Maze#Passage] = {

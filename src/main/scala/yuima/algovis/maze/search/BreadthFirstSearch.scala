@@ -24,7 +24,7 @@ object BreadthFirstSearch extends SearchAlgorithm {
       val cs = (candidates /: nextCandidates(passage)) { (q, c) => q.enqueue(c) }
       if (cs.nonEmpty) {
         val (door, doors) = cs.dequeue
-        nextPassageIsGoal(door, prev, candidates.toList, maze.goal, moved, maze.vis) match {
+        maybeNextPassage(door, prev, candidates.toList, maze.goal, moved, maze.vis) match {
           case Some(psg) =>
             moved += 1
             search(psg, doors)

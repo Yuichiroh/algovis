@@ -28,7 +28,7 @@ object IDDFS extends SearchAlgorithm {
 
       cs match {
         case door :: doors =>
-          nextPassageIsGoal(door, prev, candidates, maze.goal, moved, maze.vis) match {
+          maybeNextPassage(door, prev, candidates, maze.goal, moved, maze.vis) match {
             case Some(psg) =>
               moved += 1
               search(psg, limit, doors)
